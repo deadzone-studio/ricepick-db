@@ -131,23 +131,5 @@
     "last_update": "2026-08-08",
     "stars": 6280,
     "added": "2026-08-20"
-  },
-  {
-    "name": "Test Zapisu",
-    "author": "end-4",
-    "repo": "https://github.com/end-4/dots-hyprland",
-    "commit": "42d0aae17b744a38cd05c9044c189bfc9b13869a",
-    "screenshots": [
-      "https://raw.githubusercontent.com/end-4/dots-hyprland/main/dots/.config/quickshell/ii/assets/images/default_wallpaper.png"
-    ],
-    "description": "Proba automatu: sprawdzam czy bot ma prawo zapisac liste.",
-    "distros": [
-      "arch"
-    ],
-    "verified": false,
-    "archived": false,
-    "last_update": "2026-08-15",
-    "stars": 15699,
-    "added": "2026-08-21"
   }
 ]
