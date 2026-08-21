@@ -7,6 +7,7 @@ break out of its own quotes.
 
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -21,6 +22,12 @@ API = "https://api.github.com"
 TIMEOUT = 20
 REPO_PREFIX = "https://github.com/"
 ALLOWED_IN_PATH = set("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._-")
+
+# An image dragged into the form arrives as markdown, one pasted by hand as a
+# bare link, and one copied out of a README sometimes as an <img> tag.
+IN_MARKDOWN = re.compile(r"!?\[[^\]]*\]\(\s*<?(https://[^)\s>]+)")
+IN_HTML = re.compile(r"""<img[^>]+src=["'](https://[^"']+)["']""", re.IGNORECASE)
+BARE_LINK = re.compile(r"https://\S+")
 
 
 class Refused(Exception):
@@ -54,6 +61,16 @@ def ticked(block: str) -> list[str]:
         if line[:5].lower() == "- [x]":
             chosen.append(line[5:].strip().lower())
     return chosen
+
+
+def first_image(block: str) -> str:
+    """Pulls the address out of whatever shape the screenshot arrived in."""
+    for pattern in (IN_MARKDOWN, IN_HTML, BARE_LINK):
+        found = pattern.search(block)
+        if found:
+            url = found.group(1) if found.lastindex else found.group(0)
+            return url.rstrip(">),.;\"'")
+    return ""
 
 
 def api(path: str) -> dict:
@@ -100,12 +117,15 @@ def split_repo(url: str) -> tuple[str, str]:
 def build_entry(form: dict[str, str]) -> dict:
     name = form.get("name", "").strip()
     repo_url = form.get("repository", "").strip()
-    screenshot = form.get("screenshot", "").strip()
+    screenshot = first_image(form.get("screenshot", ""))
     description = " ".join(form.get("description", "").split())
 
+    if not screenshot:
+        raise Refused("there is no link to an image in the screenshot field")
     if not screenshot.startswith(IMAGE_HOSTS):
         allowed = "\n".join(f"- `{host}`" for host in IMAGE_HOSTS)
-        raise Refused("the screenshot has to be hosted on one of these:\n" + allowed)
+        raise Refused(f"`{screenshot}`\n\nthe screenshot has to be hosted on one of these:\n"
+                      + allowed)
 
     owner, repo_name = split_repo(repo_url)
     meta = api(f"/repos/{owner}/{repo_name}")

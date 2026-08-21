@@ -27,11 +27,14 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: screenshot
     attributes:
       label: Screenshot
-      description: A direct link to an image, or drag one in and paste the link it gives you.
+      description: >-
+        Drag an image file straight into this box, or paste a direct link to
+        one. Right-click a screenshot in the rice's README and copy the image
+        address - the page it sits on is not enough.
       placeholder: https://raw.githubusercontent.com/someone/their-rice/main/preview.png
     validations:
       required: true
