@@ -1,0 +1,68 @@
+name: Add a rice
+description: Suggest a Hyprland rice for the catalog.
+title: "Add: "
+labels: ["add-rice"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill the fields in. A bot checks them and adds the rice straight away,
+        marked unverified. Anything that does not pass is explained here.
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Letters, digits, spaces and hyphens. Up to 40 characters.
+      placeholder: Serpantinum
+    validations:
+      required: true
+
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      description: The GitHub address of the rice itself.
+      placeholder: https://github.com/someone/their-rice
+    validations:
+      required: true
+
+  - type: input
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: A direct link to an image, or drag one in and paste the link it gives you.
+      placeholder: https://raw.githubusercontent.com/someone/their-rice/main/preview.png
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One sentence, in English. Up to 200 characters, no line breaks.
+      placeholder: Waybar, Rofi and Hyprlock, all coloured from the wallpaper.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: distros
+    attributes:
+      label: Distributions it is known to work on
+      options:
+        - label: arch
+        - label: fedora
+        - label: debian
+        - label: ubuntu
+        - label: nixos
+        - label: opensuse
+
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Before you send this
+      options:
+        - label: The repository is public and still exists.
+          required: true
+        - label: I understand ricepick pins a commit and never runs install scripts.
+          required: true

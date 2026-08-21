@@ -1,0 +1,84 @@
+name: add a rice
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+
+# Two issues answered at once must not push over each other.
+concurrency:
+  group: catalog
+  cancel-in-progress: false
+
+jobs:
+  add:
+    if: >-
+      github.event.issue.state == 'open' &&
+      contains(github.event.issue.labels.*.name, 'add-rice')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the same checks the program uses
+        run: pip install "ricepick @ git+https://github.com/M4rtwy/ricepick@v0.1.1"
+
+      - name: Read the form
+        id: form
+        # The issue body arrives as an environment variable and is never put
+        # into this command. Anything else here would run whatever was typed.
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set +e
+          python scripts/add_rice.py > message.md 2> notes.txt
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          cat notes.txt
+          cat message.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Save the new list
+        if: steps.form.outputs.code == '0'
+        env:
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          git config user.name "ricepick bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rices.json
+          git commit -m "catalog: add a rice from #${NUMBER}"
+          git pull --rebase --quiet
+          git push
+
+      - name: Answer the person
+        uses: actions/github-script@v7
+        env:
+          CODE: ${{ steps.form.outputs.code }}
+        with:
+          script: |
+            const fs = require("fs");
+            const added = process.env.CODE === "0";
+            const body = fs.readFileSync("message.md", "utf8").trim()
+              || "The bot could not read this form.";
+
+            const issue = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            };
+
+            await github.rest.issues.createComment({
+              ...issue,
+              body: added ? body : `Not added yet.\n\n${body}`,
+            });
+
+            if (added) {
+              await github.rest.issues.update({ ...issue, state: "closed" });
+            } else {
+              await github.rest.issues.addLabels({ ...issue, labels: ["needs fixing"] });
+            }
