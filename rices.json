@@ -1,98 +1,5 @@
 [
   {
-    "name": "Serpantinum",
-    "author": "ilyamiro",
-    "repo": "https://github.com/ilyamiro/serpantinum",
-    "commit": "5d4451f7ab55ddaced9ba350b6dba5dd2932aeb1",
-    "screenshots": [
-      "https://raw.githubusercontent.com/ilyamiro/serpantinum/5d4451f7ab55ddaced9ba350b6dba5dd2932aeb1/previews/screenshot1.png",
-      "https://raw.githubusercontent.com/ilyamiro/serpantinum/5d4451f7ab55ddaced9ba350b6dba5dd2932aeb1/previews/screenshot2.png"
-    ],
-    "description": "A whole Quickshell desktop that repaints itself from your wallpaper.",
-    "distros": [
-      "arch"
-    ],
-    "verified": true,
-    "archived": false,
-    "last_update": "2026-08-08",
-    "stars": 6280,
-    "added": "2026-08-20"
-  },
-  {
-    "name": "NeKoRoSHELL",
-    "author": "NeKoRoSYS",
-    "repo": "https://github.com/NeKoRoSYS/NeKoRoSHELL",
-    "commit": "aa504d93a3e5929061b359e8146b388f1092844c",
-    "screenshots": [
-      "https://raw.githubusercontent.com/NeKoRoSYS/NeKoRoSHELL/aa504d93a3e5929061b359e8146b388f1092844c/showcase/image.png"
-    ],
-    "description": "Simple and modular: Waybar, SwayNC, Rofi, Hyprlock, colors from Wallust.",
-    "distros": [
-      "arch"
-    ],
-    "verified": false,
-    "archived": false,
-    "last_update": "2026-07-18",
-    "stars": 58,
-    "added": "2026-08-20"
-  },
-  {
-    "name": "Material You",
-    "author": "koeqaife",
-    "repo": "https://github.com/koeqaife/hyprland-material-you",
-    "commit": "b9215303f52d792771ac2167b18a2daad2bf58aa",
-    "screenshots": [
-      "https://raw.githubusercontent.com/koeqaife/hyprland-material-you/b9215303f52d792771ac2167b18a2daad2bf58aa/assets/screenshot.png"
-    ],
-    "description": "Material You desktop that generates its whole palette from the wallpaper.",
-    "distros": [
-      "arch"
-    ],
-    "verified": false,
-    "archived": false,
-    "last_update": "2026-08-16",
-    "stars": 1522,
-    "added": "2026-08-20"
-  },
-  {
-    "name": "linkfrg dots",
-    "author": "linkfrg",
-    "repo": "https://github.com/linkfrg/dotfiles",
-    "commit": "9d1e780d5c5fd6067bd3ce6d7cbdccd196afbd72",
-    "screenshots": [
-      "https://raw.githubusercontent.com/linkfrg/dotfiles/9d1e780d5c5fd6067bd3ce6d7cbdccd196afbd72/.github/assets/main.png"
-    ],
-    "description": "A clean Hyprland setup built on Ignis, with its own shell widgets.",
-    "distros": [
-      "arch"
-    ],
-    "verified": false,
-    "archived": false,
-    "last_update": "2026-08-18",
-    "stars": 1016,
-    "added": "2026-08-20"
-  },
-  {
-    "name": "meowrch",
-    "author": "meowrch",
-    "repo": "https://github.com/meowrch/meowrch",
-    "commit": "dab45f99e65ba95ba9719e00768d337278861bb9",
-    "screenshots": [
-      "https://raw.githubusercontent.com/meowrch/meowrch/dab45f99e65ba95ba9719e00768d337278861bb9/.meta/assets/1.png",
-      "https://raw.githubusercontent.com/meowrch/meowrch/dab45f99e65ba95ba9719e00768d337278861bb9/.meta/assets/2.png",
-      "https://raw.githubusercontent.com/meowrch/meowrch/dab45f99e65ba95ba9719e00768d337278861bb9/.meta/assets/3.png"
-    ],
-    "description": "Playful cat-themed dots for Hyprland and bspwm, with a theme switcher.",
-    "distros": [
-      "arch"
-    ],
-    "verified": false,
-    "archived": false,
-    "last_update": "2026-08-16",
-    "stars": 944,
-    "added": "2026-08-20"
-  },
-  {
     "name": "dusky",
     "author": "dusklinux",
     "repo": "https://github.com/dusklinux/dusky",
@@ -131,5 +38,116 @@
     "last_update": "2026-05-13",
     "stars": 970,
     "added": "2026-08-20"
+  },
+  {
+    "name": "linkfrg dots",
+    "author": "linkfrg",
+    "repo": "https://github.com/linkfrg/dotfiles",
+    "commit": "9d1e780d5c5fd6067bd3ce6d7cbdccd196afbd72",
+    "screenshots": [
+      "https://raw.githubusercontent.com/linkfrg/dotfiles/9d1e780d5c5fd6067bd3ce6d7cbdccd196afbd72/.github/assets/main.png"
+    ],
+    "description": "A clean Hyprland setup built on Ignis, with its own shell widgets.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-08-18",
+    "stars": 1016,
+    "added": "2026-08-20"
+  },
+  {
+    "name": "Material You",
+    "author": "koeqaife",
+    "repo": "https://github.com/koeqaife/hyprland-material-you",
+    "commit": "b9215303f52d792771ac2167b18a2daad2bf58aa",
+    "screenshots": [
+      "https://raw.githubusercontent.com/koeqaife/hyprland-material-you/b9215303f52d792771ac2167b18a2daad2bf58aa/assets/screenshot.png"
+    ],
+    "description": "Material You desktop that generates its whole palette from the wallpaper.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-08-16",
+    "stars": 1522,
+    "added": "2026-08-20"
+  },
+  {
+    "name": "meowrch",
+    "author": "meowrch",
+    "repo": "https://github.com/meowrch/meowrch",
+    "commit": "dab45f99e65ba95ba9719e00768d337278861bb9",
+    "screenshots": [
+      "https://raw.githubusercontent.com/meowrch/meowrch/dab45f99e65ba95ba9719e00768d337278861bb9/.meta/assets/1.png",
+      "https://raw.githubusercontent.com/meowrch/meowrch/dab45f99e65ba95ba9719e00768d337278861bb9/.meta/assets/2.png",
+      "https://raw.githubusercontent.com/meowrch/meowrch/dab45f99e65ba95ba9719e00768d337278861bb9/.meta/assets/3.png"
+    ],
+    "description": "Playful cat-themed dots for Hyprland and bspwm, with a theme switcher.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-08-16",
+    "stars": 944,
+    "added": "2026-08-20"
+  },
+  {
+    "name": "NeKoRoSHELL",
+    "author": "NeKoRoSYS",
+    "repo": "https://github.com/NeKoRoSYS/NeKoRoSHELL",
+    "commit": "aa504d93a3e5929061b359e8146b388f1092844c",
+    "screenshots": [
+      "https://raw.githubusercontent.com/NeKoRoSYS/NeKoRoSHELL/aa504d93a3e5929061b359e8146b388f1092844c/showcase/image.png"
+    ],
+    "description": "Simple and modular: Waybar, SwayNC, Rofi, Hyprlock, colors from Wallust.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-07-18",
+    "stars": 58,
+    "added": "2026-08-20"
+  },
+  {
+    "name": "Serpantinum",
+    "author": "ilyamiro",
+    "repo": "https://github.com/ilyamiro/serpantinum",
+    "commit": "5d4451f7ab55ddaced9ba350b6dba5dd2932aeb1",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ilyamiro/serpantinum/5d4451f7ab55ddaced9ba350b6dba5dd2932aeb1/previews/screenshot1.png",
+      "https://raw.githubusercontent.com/ilyamiro/serpantinum/5d4451f7ab55ddaced9ba350b6dba5dd2932aeb1/previews/screenshot2.png"
+    ],
+    "description": "A whole Quickshell desktop that repaints itself from your wallpaper.",
+    "distros": [
+      "arch"
+    ],
+    "verified": true,
+    "archived": false,
+    "last_update": "2026-08-08",
+    "stars": 6280,
+    "added": "2026-08-20"
+  },
+  {
+    "name": "Test Zapisu",
+    "author": "end-4",
+    "repo": "https://github.com/end-4/dots-hyprland",
+    "commit": "42d0aae17b744a38cd05c9044c189bfc9b13869a",
+    "screenshots": [
+      "https://raw.githubusercontent.com/end-4/dots-hyprland/main/dots/.config/quickshell/ii/assets/images/default_wallpaper.png"
+    ],
+    "description": "Proba automatu: sprawdzam czy bot ma prawo zapisac liste.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-08-15",
+    "stars": 15699,
+    "added": "2026-08-21"
   }
 ]
