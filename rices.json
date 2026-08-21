@@ -1,10 +1,83 @@
 [
   {
+    "name": "43PR dots",
+    "author": "43PR",
+    "repo": "https://github.com/43PR/dotfiles",
+    "commit": "5b09f707198f4633be85773b07d76616fba1b998",
+    "screenshots": [
+      "https://raw.githubusercontent.com/43PR/dotfiles/5b09f707198f4633be85773b07d76616fba1b998/x.png"
+    ],
+    "description": "Grey panels tiled across the screen: a music player, graphs, a file list and a launcher, all at once.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-08-19",
+    "stars": 608,
+    "added": "2026-08-21"
+  },
+  {
+    "name": "ArchEclipse",
+    "author": "AymanLyesri",
+    "repo": "https://github.com/AymanLyesri/ArchEclipse",
+    "commit": "86e5604a7bd3d216e67cb2758976336796b0925b",
+    "screenshots": [
+      "https://raw.githubusercontent.com/AymanLyesri/ArchEclipse/86e5604a7bd3d216e67cb2758976336796b0925b/.github/assets/app-launcher.png"
+    ],
+    "description": "A black and white desktop with a phone-like widget panel, aimed at staying fast while looking polished.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-08-17",
+    "stars": 632,
+    "added": "2026-08-21"
+  },
+  {
+    "name": "Axenide",
+    "author": "Axenide",
+    "repo": "https://github.com/Axenide/Dotfiles",
+    "commit": "052d26a5a063a6e52ee8fd194f30c70c63ff43a4",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Axenide/Dotfiles/052d26a5a063a6e52ee8fd194f30c70c63ff43a4/screenshots/1.png"
+    ],
+    "description": "Bright red, Japanese lettering and a mecha wallpaper, with a compact system panel in the middle.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-06-09",
+    "stars": 635,
+    "added": "2026-08-21"
+  },
+  {
+    "name": "Crystal",
+    "author": "namishh",
+    "repo": "https://github.com/namishh/crystal",
+    "commit": "b43ab1d0fd4e9f686739a20cdc130c5cfc9d0159",
+    "screenshots": [
+      "https://raw.githubusercontent.com/chadcat7/crystal/kawai/.github/1.png"
+    ],
+    "description": "Pastel pink Nix dotfiles with a sidebar launcher and small charts on the desktop.",
+    "distros": [
+      "nixos"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-01-13",
+    "stars": 877,
+    "added": "2026-08-21"
+  },
+  {
     "name": "dusky",
     "author": "dusklinux",
     "repo": "https://github.com/dusklinux/dusky",
     "commit": "fa16c3e39ef342436984f0604628e20affd99705",
     "screenshots": [
+      "https://raw.githubusercontent.com/dusklinux/dusky/fa16c3e39ef342436984f0604628e20affd99705/Pictures/readme_assets/dusky_control_center.webp",
       "https://raw.githubusercontent.com/dusklinux/dusky/fa16c3e39ef342436984f0604628e20affd99705/Pictures/readme_assets/waybar_horizontal.webp",
       "https://raw.githubusercontent.com/dusklinux/dusky/fa16c3e39ef342436984f0604628e20affd99705/Pictures/readme_assets/waybar_block.webp",
       "https://raw.githubusercontent.com/dusklinux/dusky/fa16c3e39ef342436984f0604628e20affd99705/Pictures/readme_assets/waybar_circular.webp"
@@ -18,6 +91,60 @@
     "last_update": "2026-08-20",
     "stars": 2342,
     "added": "2026-08-20"
+  },
+  {
+    "name": "end4-pC",
+    "author": "pctrade",
+    "repo": "https://github.com/pctrade/end4-pC",
+    "commit": "3f2d513dc7a3615d142e81810d47c0abe5e3bc1b",
+    "screenshots": [
+      "https://raw.githubusercontent.com/pctrade/end4-pC/3f2d513dc7a3615d142e81810d47c0abe5e3bc1b/screenshots/1.png"
+    ],
+    "description": "Illogical Impulse rebuilt around widgets: weather, a music player and a clock scattered over the desktop.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-08-16",
+    "stars": 1606,
+    "added": "2026-08-21"
+  },
+  {
+    "name": "Eric Murphy dots",
+    "author": "ericmurphyxyz",
+    "repo": "https://github.com/ericmurphyxyz/dotfiles",
+    "commit": "d10d652a7f718f504a33e51d3f617fe4dfb0539c",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ericmurphyxyz/dotfiles/d10d652a7f718f504a33e51d3f617fe4dfb0539c/.github/screenshots/desktop.png"
+    ],
+    "description": "A plain Hyprland setup on Arch, kept deliberately small and readable.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-02-09",
+    "stars": 734,
+    "added": "2026-08-21"
+  },
+  {
+    "name": "flickowoa dots",
+    "author": "flickowoa",
+    "repo": "https://github.com/flickowoa/dotfiles",
+    "commit": "4e23f15a78fecdc3b3c71fcca2b650eab0599f88",
+    "screenshots": [
+      "https://github.com/flick0/dotfiles/blob/aurora/assets/pipes.png?raw=true"
+    ],
+    "description": "Soft gradients and rounded everything, built on AGS. Loud colours without a single sharp corner.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-06-15",
+    "stars": 1982,
+    "added": "2026-08-21"
   },
   {
     "name": "Fox Dotfiles",
@@ -40,6 +167,42 @@
     "added": "2026-08-20"
   },
   {
+    "name": "Frost Phoenix",
+    "author": "Frost-Phoenix",
+    "repo": "https://github.com/Frost-Phoenix/nixos-config",
+    "commit": "66cc581645bef74898bd3eb36d9f4138d1069d02",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Frost-Phoenix/nixos-config/66cc581645bef74898bd3eb36d9f4138d1069d02/.github/assets/screenshots/1.png"
+    ],
+    "description": "A NixOS and Hyprland rice with everything declared in Home Manager, so the whole look rebuilds from one command.",
+    "distros": [
+      "nixos"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-06-25",
+    "stars": 937,
+    "added": "2026-08-21"
+  },
+  {
+    "name": "Illogical Impulse",
+    "author": "end-4",
+    "repo": "https://github.com/end-4/dots-hyprland",
+    "commit": "42d0aae17b744a38cd05c9044c189bfc9b13869a",
+    "screenshots": [
+      "https://github.com/user-attachments/assets/9d7af13f-89ef-470d-ba78-d2288b79cf60"
+    ],
+    "description": "Usability-first Quickshell desktop: a sidebar with an AI chat, an overview and material colours from the wallpaper.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-08-15",
+    "stars": 15700,
+    "added": "2026-08-21"
+  },
+  {
     "name": "linkfrg dots",
     "author": "linkfrg",
     "repo": "https://github.com/linkfrg/dotfiles",
@@ -58,6 +221,24 @@
     "added": "2026-08-20"
   },
   {
+    "name": "Linux Retroism",
+    "author": "diinki",
+    "repo": "https://github.com/diinki/linux-retroism",
+    "commit": "255eb6a7b5a0d26413eea8dc5f47e8d67bb4b1ff",
+    "screenshots": [
+      "https://raw.githubusercontent.com/diinki/linux-retroism/255eb6a7b5a0d26413eea8dc5f47e8d67bb4b1ff/screenshots/default.png"
+    ],
+    "description": "A 1990s desktop rebuilt in Quickshell, grey boxes and all, for Hyprland or Sway.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-03-21",
+    "stars": 770,
+    "added": "2026-08-21"
+  },
+  {
     "name": "Material You",
     "author": "koeqaife",
     "repo": "https://github.com/koeqaife/hyprland-material-you",
@@ -74,6 +255,24 @@
     "last_update": "2026-08-16",
     "stars": 1522,
     "added": "2026-08-20"
+  },
+  {
+    "name": "Matt-FTW dots",
+    "author": "Matt-FTW",
+    "repo": "https://github.com/Matt-FTW/dotfiles",
+    "commit": "8dc7a3ffdbd599f0873f7b1026b4e46015e2cb19",
+    "screenshots": [
+      "https://raw.githubusercontent.com/Matt-FTW/dotfiles/8dc7a3ffdbd599f0873f7b1026b4e46015e2cb19/.config/VSCodium/User/.github/overview-1.png"
+    ],
+    "description": "Catppuccin everywhere, with Neovim, a floating bar and a wallpaper of leaves in the dark.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-07-28",
+    "stars": 769,
+    "added": "2026-08-21"
   },
   {
     "name": "meowrch",
@@ -114,13 +313,31 @@
     "added": "2026-08-20"
   },
   {
+    "name": "qxb3 conf",
+    "author": "qxb3",
+    "repo": "https://github.com/qxb3/conf",
+    "commit": "a76275c68d1fbd83323446aafbf1e4120cef3f01",
+    "screenshots": [
+      "https://raw.githubusercontent.com/qxb3/gruvbox.hypr/ink/repo/1.png"
+    ],
+    "description": "Almost nothing on screen: a pale wallpaper, a thin dock and a single line of status.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-03-14",
+    "stars": 810,
+    "added": "2026-08-21"
+  },
+  {
     "name": "Serpantinum",
     "author": "ilyamiro",
     "repo": "https://github.com/ilyamiro/serpantinum",
     "commit": "5d4451f7ab55ddaced9ba350b6dba5dd2932aeb1",
     "screenshots": [
-      "https://raw.githubusercontent.com/ilyamiro/serpantinum/5d4451f7ab55ddaced9ba350b6dba5dd2932aeb1/previews/screenshot1.png",
-      "https://raw.githubusercontent.com/ilyamiro/serpantinum/5d4451f7ab55ddaced9ba350b6dba5dd2932aeb1/previews/screenshot2.png"
+      "https://raw.githubusercontent.com/ilyamiro/serpantinum/5d4451f7ab55ddaced9ba350b6dba5dd2932aeb1/previews/screenshot2.png",
+      "https://raw.githubusercontent.com/ilyamiro/serpantinum/5d4451f7ab55ddaced9ba350b6dba5dd2932aeb1/previews/screenshot1.png"
     ],
     "description": "A whole Quickshell desktop that repaints itself from your wallpaper.",
     "distros": [
@@ -131,5 +348,59 @@
     "last_update": "2026-08-08",
     "stars": 6280,
     "added": "2026-08-20"
+  },
+  {
+    "name": "Surface Dots",
+    "author": "snes19xx",
+    "repo": "https://github.com/snes19xx/surface-dots",
+    "commit": "6bba1a62b785b66b75b55c61e73aa890e1e2cad8",
+    "screenshots": [
+      "https://raw.githubusercontent.com/snes19xx/surface-dots/6bba1a62b785b66b75b55c61e73aa890e1e2cad8/media/screenshots/top_bar.png"
+    ],
+    "description": "One desktop in two skins, light and dark, with a calendar and notifications down the right side.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-08-09",
+    "stars": 790,
+    "added": "2026-08-21"
+  },
+  {
+    "name": "XNM1 NixOS",
+    "author": "XNM1",
+    "repo": "https://github.com/XNM1/linux-nixos-hyprland-config-dotfiles",
+    "commit": "8569b484018d3d08a8f3242da4f248c393704eb2",
+    "screenshots": [
+      "https://raw.githubusercontent.com/XNM1/linux-nixos-hyprland-config-dotfiles/8569b484018d3d08a8f3242da4f248c393704eb2/home/Pictures/Screenshots/screenshot-1.png"
+    ],
+    "description": "NixOS and Hyprland in Catppuccin Macchiato, with an AGS bar down the side of the screen.",
+    "distros": [
+      "nixos"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-07-19",
+    "stars": 932,
+    "added": "2026-08-21"
+  },
+  {
+    "name": "Zenities",
+    "author": "hayyaoe",
+    "repo": "https://github.com/hayyaoe/zenities",
+    "commit": "e3ef08346b39de3f953cc9e70298d511a6a4b808",
+    "screenshots": [
+      "https://raw.githubusercontent.com/hayyaoe/zenities/e3ef08346b39de3f953cc9e70298d511a6a4b808/screenshots/hero-new.png"
+    ],
+    "description": "A teal anime desktop with a control centre, a calendar and per-app volume sliders.",
+    "distros": [
+      "arch"
+    ],
+    "verified": false,
+    "archived": false,
+    "last_update": "2026-08-17",
+    "stars": 889,
+    "added": "2026-08-21"
   }
 ]
