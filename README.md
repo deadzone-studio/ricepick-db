@@ -1,11 +1,11 @@
 # ricepick-db
 
-The list [ricepick](https://github.com/M4rtwy/ricepick) reads. One file:
+The list [ricepick](https://github.com/deadzone-studio/ricepick) reads. One file:
 `rices.json`.
 
 ## Add a rice
 
-[Open an issue with the form.](https://github.com/M4rtwy/ricepick-db/issues/new/choose)
+[Open an issue with the form.](https://github.com/deadzone-studio/ricepick-db/issues/new/choose)
 A bot checks every field, pins the current commit of the repository, reads the
 star count and whether it has been archived, and adds it right away — marked
 unverified. If something is wrong it says what, and nothing is written.
@@ -48,7 +48,7 @@ screenshot never stops looking good.
 
 The bot uses the same checks the program does, so the two can never disagree —
 it installs `ricepick` and calls `ricepick.validate`. The rules live
-[there](https://github.com/M4rtwy/ricepick/blob/main/ricepick/validate.py), in
+[there](https://github.com/deadzone-studio/ricepick/blob/main/ricepick/validate.py), in
 one file.
 
 | field | rule |

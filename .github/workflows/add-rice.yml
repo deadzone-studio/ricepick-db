@@ -27,7 +27,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install the same checks the program uses
-        run: pip install "ricepick @ git+https://github.com/M4rtwy/ricepick@v0.1.1"
+        run: pip install "ricepick @ git+https://github.com/deadzone-studio/ricepick@v0.1.1"
 
       - name: Read the form
         id: form
